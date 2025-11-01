@@ -34,7 +34,7 @@ image = (
 @app.function(
     image=image,
     gpu="A100",  # Modal provides CUDA automatically
-    secrets=[modal.Secret.from_name("hf-secret")],
+    secrets=[modal.Secret.from_name("bag")],
     timeout=3600  # 1 hour for model downloads
 )
 @modal.asgi_app()
