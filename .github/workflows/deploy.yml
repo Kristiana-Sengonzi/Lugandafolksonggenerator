@@ -37,7 +37,7 @@ jobs:
       # This is the core command that deploys your application to Modal.
       # Replace 'my_app.py' with the actual file name of your Modal application entrypoint.
       # Use the '--name' flag if you want to explicitly name your deployed application.
-      run: modal deploy my_app.py --name my-github-app-name
+      run: modal deploy modal_app.py
       
     - name: Check Deployment Status
       # A simple step to ensure the command finished successfully
